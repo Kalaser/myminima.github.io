@@ -4,9 +4,9 @@ title: Contact
 permalink: /contact/
 ---
 
-# 联系我们
+## 联系我们
 
-我们很高兴听到您的声音！如果您有任何问题、建议或合作意向，请随时通过以下方式与我们取得联系。
+*我们很高兴听到您的声音！如果您有任何问题、建议或合作意向，请随时通过以下方式与我们取得联系。*
 
 ---
 
@@ -20,7 +20,7 @@ permalink: /contact/
 
 ## 在线表单
 
-请填写以下表单，我们会尽快与您联系：
+*请填写以下表单，我们会尽快与您联系：*
 
 <form action="https://formspree.io/f/your-form-id" method="POST">
   <label for="name">姓名：</label><br>
@@ -38,7 +38,8 @@ permalink: /contact/
 
 ## 社交媒体
 
-关注我们以获取最新资讯：
+*关注我们以获取最新资讯：*
+
 - [Twitter](https://twitter.com/yourprofile)
 - [LinkedIn](https://linkedin.com/in/yourprofile)
 - [Facebook](https://facebook.com/yourprofile)
