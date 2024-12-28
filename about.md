@@ -3,16 +3,61 @@ layout: page
 title: About
 permalink: /about/
 ---
+# 关于我们
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+*欢迎来到知识站点！我们致力于分享最完整和最准确的知识内容*
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+---
+
+## 本站的故事
+
+*知识站的旅程始于我闲置的时间创立，我希望通过创建一个知识分享库来记录在开发过程中和日常中遇到的重要知识点*
+
+---
+
+
+
+**始终坚信:**
+
+- [知识分享自由]
+- [知识分享真实]
+- [知识分享完整]
+
+---
+
+## 团队介绍
+
+*我们是一支由 [领域/职业] 专业人士组成的团队，拥有 [团队特点]：*
+
+- **[Lio]**：专注于....。
+- **[Open]**：热衷于....。
+- **[Mack]**：负责 ....。
+
+---
+
+## 我们的服务
+
+我们的主要服务包括：
+- **[服务 1]**：提供知识分享服务。
+- **[服务 2]**：帮助学习者更好找到自己的需要知识内容。
+- **[服务 3]**：专注于完整知识内容记录。
+
+---
+
+## 联系我们
+
+如果您有任何问题或建议，请随时联系我们：
+- **电子邮件**：[your-email@example.com](mailto:your-email@example.com)
+- **社交媒体**：[Twitter](https://twitter.com/yourprofile) | [LinkedIn](https://linkedin.com/in/yourprofile) | [其他平台](#)
+- **地址**：None。
+
+我们期待您的来信！
+
+---
+
+_感谢您访问我们的关于页面！我们期待与您一同前行。_
+
 
 
 [jekyll-organization]: https://github.com/jekyll
