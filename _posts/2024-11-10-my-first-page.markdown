@@ -6,22 +6,21 @@ categories: jekyll update
 
 ---
 
-C 语言知识点
+### C 语言知识点
 
-1. **基本语法**
+#### 1. **基本语法**
 
-**数据类型**：`int`, `char`, `float`, `double`, `long`, `short` 等基本类型。
-
-**变量声明和初始化**：
+- **数据类型**：`int`, `char`, `float`, `double`, `long`, `short` 等基本类型。
+- **变量声明和初始化**：
 
 ```c
 int a = 10;
 char ch = 'A';
 ```
 
-​           **控制结构**：`if`, `else`, `for`, `while`, `switch`, `break`, `continue` 
+- **控制结构**：`if`, `else`, `for`, `while`, `switch`, `break`, `continue` 
 
-**函数定义和调用**：
+- **函数定义和调用**：
 
 ```c
 int add(int a, int b) 
@@ -31,7 +30,7 @@ int result = add(3, 4);
 }
 ```
 
-#### 2.指针 
+#### 2.**指针**
 
 定义和使用：指针是 C 语言的核心，允许直接访问内存。
 
@@ -50,9 +49,7 @@ int result = add(3, 4);
   Copy codeint *arr = (int *)malloc(sizeof(int) * 10);
   free(arr);
   ```
-
-```
-#### 3. **结构体与联合体**
+#### 3.**结构体与联合体**
 
 - **结构体：**用来组合不同类型的数据。
 
@@ -71,7 +68,7 @@ int result = add(3, 4);
       int i;
       float f;
   };
-  ```
+```
 
 #### 4. **文件操作**
 
@@ -90,14 +87,11 @@ int result = add(3, 4);
 
 - **指针和内存泄漏**：指针的误用可能导致内存泄漏，使用 `free()` 释放动态分配的内存。
 
-  ### **C++ 语言知识点**
+###  C++ 语言知识点
 
-  #### 1. **面向对象编程（OOP）**
-
-  ​			
+#### 1. **面向对象编程（OOP）**		
 
   - **类与对象**：
-
     ```C++
     cppCopy codeclass Person {
     public:
@@ -112,7 +106,7 @@ int result = add(3, 4);
     p1.age = 30;
     p1.introduce();
     ```
-
+    
   - **构造函数与析构函数**：构造函数用于初始化对象，析构函数用于清理。
 
     ```c++
@@ -122,12 +116,10 @@ int result = add(3, 4);
         ~MyClass() { cout << "Destructor\n"; }
     };
     ```
-
+    
   - **继承**：
-
     - 基类和派生类
     - 继承方式：`public`, `protected`, `private`
-
     ```c++
     cppCopy codeclass Animal {
     public:
@@ -211,21 +203,21 @@ int result = add(3, 4);
 
   #### 5. **异常处理**
 
-  - try, catch, throw
+  - `try`, `catch`, `throw`：
 
-    ：C++ 提供了异常处理机制，能够捕获并处理程序中的错误。
+```c++
+C++ 提供了异常处理机制，能够捕获并处理程序中的错误。
+cppCopy codetry {
+    throw 10;
+} catch (int e) {
+    cout << "Caught exception: " << e;
+}
+```
 
-    ```c++
-    cppCopy codetry {
-        throw 10;
-    } catch (int e) {
-        cout << "Caught exception: " << e;
-    }
-    ```
 
-  ------
+---
 
-  ### **C 和 C++ 公共知识点**
+  ### C 和 C++ 公共知识点
 
   #### 1. **内存模型**
 
