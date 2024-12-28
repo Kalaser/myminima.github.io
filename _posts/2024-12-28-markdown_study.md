@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "MarkDown学习"
 date:   2024-12-28 14:12:20 +0800
 categories: jekyll update
