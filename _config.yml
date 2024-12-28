@@ -1,16 +1,17 @@
 title: 知识库
-author:
+author: ChenZheng
   name: Kalaser
   email: 1297926673@qq.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  这个一个记录个人学习的知识站点，包含C/C++、操作系统、计算机网络、数学等，会详细记录每种知识的要点并且给出实际的例子，欢迎访问这个站点。
+  这个一个记录个人学习的知识站点,包含C/C++、操作系统、计算机网络、数学等，会详细记录每种知识的要点并且给出实际的例子，欢迎访问这个站点。
 
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
+remote_theme: jekyll/minima
 theme: minima
 
 # As of November 2023, GitHub Pages still uses Minima 2.5.1 (https://pages.github.com/versions/). 
@@ -28,6 +29,9 @@ plugins:
 # in order as they should show up.
 header_pages:
   - about.md
+  - contact.md
+  - archive.md
+  - categories.md
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: false
@@ -42,7 +46,7 @@ minima:
   # solarized-light	   Light variant of solarized color scheme.
   # solarized-dark	   Dark variant of solarized color scheme.
   # solarized	         Adaptive skin for solarized color scheme skins.
-  skin: classic
+  skin: dark
   
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
