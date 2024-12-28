@@ -133,7 +133,7 @@ The lib is easyx[^easyx]
 
 URL: http://www.baidu.com
 
-![美丽风景](https://github.com/Kalaser/Myminima.github.io/blob/master/Test/%E6%99%AF%E8%89%B21.jpg)
+![美丽风景](/Test/sence1.jpg)
 
 ---
 
