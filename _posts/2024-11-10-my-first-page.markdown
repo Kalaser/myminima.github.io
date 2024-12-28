@@ -38,15 +38,13 @@ int result = add(3, 4);
 - **指针算术**：指针可以进行加减运算，指向数组元素、结构体成员等。
 
   ````C
-  Copy code
   ptr++;  // 指向下一个内存位置
   ````
-
+  
 - **动态内存分配：**
 
   使用malloc 、calloc 、realloc 、free 函数
   ````C
-  Copy code
   int *arr = (int *)malloc(sizeof(int) * 10);
   free(arr);
   ````
@@ -55,25 +53,23 @@ int result = add(3, 4);
 - **结构体:**用来组合不同类型的数据。
 
   ````C
-  cCopy code
   struct Person {
       char name[50];
       int age;
   };
   struct Person p1 = {"Alice", 30};
   ````
-
+  
 - **联合体:**不同的数据共用同一块内存，节省内存。
 
   ````c
-  cCopy code
   union Data {
         int i;
         float f;
     };
   ````
-
   
+
 
 #### 4. **文件操作**
 
