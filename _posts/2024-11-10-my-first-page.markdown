@@ -57,6 +57,7 @@ int result = add(3, 4);
       char name[50];
       int age;
   };
+  
   struct Person p1 = {"Alice", 30};
   ````
   
