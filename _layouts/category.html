@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+<div class="category-page">
+  <h1>分类：{{ page.title }}</h1>
+  <p>以下是属于分类 <strong>{{ page.category }}</strong> 的所有文章：</p>
+
+  <ul class="post-list">
+    {% for post in site.categories[page.category] %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
