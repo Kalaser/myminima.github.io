@@ -1,4 +1,5 @@
 ---
+
 layout: post
 title:  "C/C++基础知识"
 date:   2024-11-10 19:36:59 +0800
@@ -44,73 +45,81 @@ int result = add(3, 4);
 - **动态内存分配：**
 
   使用malloc 、calloc 、realloc 、free 函数
-
   ```C
-  Copy codeint *arr = (int *)malloc(sizeof(int) * 10);
+  Copy code
+  int *arr = (int *)malloc(sizeof(int) * 10);
   free(arr);
   ```
 #### 3.**结构体与联合体**
 
-- **结构体：**用来组合不同类型的数据。
+- **结构体:**用来组合不同类型的数据。
 
   ```C
-  cCopy codestruct Person {
+  cCopy code
+  struct Person {
       char name[50];
       int age;
   };
   struct Person p1 = {"Alice", 30};
-```
+  ```
 
-- **联合体：**不同的数据共用同一块内存，节省内存。
+- **联合体:**不同的数据共用同一块内存，节省内存。
 
-  ```C
-  cCopy codeunion Data {
-      int i;
-      float f;
-  };
-```
+  ```c
+  cCopy code
+  union Data {
+        int i;
+        float f;
+    };
+  ```
+
+  
 
 #### 4. **文件操作**
 
 - **文件读取和写入:**
 
   ```c
-  cCopy codeFILE *fp = fopen("file.txt", "r");
+  cCopy code
+  FILE *fp = fopen("file.txt", "r");
   char str[100];
   fgets(str, 100, fp);
   fclose(fp);
-  ```
 
 #### 5. **内存管理**
 
 - **堆和栈**：栈用于局部变量，堆用于动态分配的内存。
-
 - **指针和内存泄漏**：指针的误用可能导致内存泄漏，使用 `free()` 释放动态分配的内存。
+
+````c++
+cppCopy code
+ class Person {
+    public:
+        string name;
+        int age;
+        void introduce() {cout << "Hi, my name is " << name << " and I am " << age << " years old.";}
+};
+    Person p1;
+    p1.name = "Alice";
+    p1.age = 30;
+    p1.introduce();
+````
+
+---
+
+
 
 ###  C++ 语言知识点
 
 #### 1. **面向对象编程（OOP）**		
 
   - **类与对象**：
-    ```C++
-    cppCopy codeclass Person {
-    public:
-        string name;
-        int age;
-        void introduce() {
-            cout << "Hi, my name is " << name << " and I am " << age << " years old.";
-        }
-    };
-    Person p1;
-    p1.name = "Alice";
-    p1.age = 30;
-    p1.introduce();
-    ```
-    
+
   - **构造函数与析构函数**：构造函数用于初始化对象，析构函数用于清理。
 
     ```c++
-    cppCopy codeclass MyClass {
+    cppCopy code
+    class MyClass {
     public:
         MyClass() { cout << "Constructor\n"; }
         ~MyClass() { cout << "Destructor\n"; }
@@ -118,10 +127,12 @@ int result = add(3, 4);
     ```
     
   - **继承**：
+    
     - 基类和派生类
     - 继承方式：`public`, `protected`, `private`
     ```c++
-    cppCopy codeclass Animal {
+    cppCopy code
+    class Animal {
     public:
         void sound() { cout << "Animal sound"; }
     };
@@ -130,11 +141,12 @@ int result = add(3, 4);
         void sound() { cout << "Woof!"; }
     };
     ```
-
+    
   - **多态性**：通过虚函数实现动态绑定。
 
     ```c++
-    cppCopy codeclass Shape {
+    cppCopy code
+    class Shape {
     public:
         virtual void draw() { cout << "Drawing Shape"; }
     };
@@ -146,19 +158,21 @@ int result = add(3, 4);
 
   #### 2. **模板（Templates）**
 
-  - 函数模板：用来创建通用函数。
+  - **函数模板**：用来创建通用函数。
 
     ```c++
-    cppCopy codetemplate <typename T>
+    cppCopy code
+    template <typename T>
     T add(T a, T b) {
         return a + b;
     }
     ```
 
-  - 类模板：用来创建通用类。
+  - **类模板**：用来创建通用类。
 
     ```c++
-    cppCopy codetemplate <class T>
+    cppCopy code
+    template <class T>
     class Box {
     private:
         T value;
@@ -177,7 +191,8 @@ int result = add(3, 4);
   - **迭代器**：通过迭代器访问容器元素。
 
     ```c++
-    cppCopy code#include <vector>
+    cppCopy code
+    #include <vector>
     #include <iostream>
     using namespace std;
     
@@ -197,7 +212,8 @@ int result = add(3, 4);
     C++11 引入的智能指针，用于自动管理内存。
 
     ```c++
-    cppCopy code#include <memory>
+    cppCopy code
+    #include <memory>
     unique_ptr<int> ptr(new int(10));
     ```
 
@@ -206,7 +222,7 @@ int result = add(3, 4);
   - `try`, `catch`, `throw`：
 
 ```c++
-C++ 提供了异常处理机制，能够捕获并处理程序中的错误。
+//C++ 提供了异常处理机制，能够捕获并处理程序中的错误。
 cppCopy codetry {
     throw 10;
 } catch (int e) {
@@ -228,7 +244,7 @@ cppCopy codetry {
 
   - **宏定义**：使用 `#define` 定义宏，类似于常量或函数的替代。
 
-    ```C
+    ```c
     #define PI 3.14
     ```
 
